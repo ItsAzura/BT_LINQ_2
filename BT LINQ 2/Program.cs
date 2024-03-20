@@ -8,6 +8,7 @@ namespace BT_LINQ_2
     {
         static void Main(string[] args)
         {
+            //Khởi tạo danh sách phòng ban
             var departments = new List<Department>
             {
                 new Department(1, "Phong IT", "Phong cong nghe thong tin"),
@@ -15,6 +16,7 @@ namespace BT_LINQ_2
                 new Department(3, "Phong AI", "Phong tri tue nhan tao"),
             };
 
+            //Khởi tạo danh sách vị trí công việc
             var positions = new List<Position>
             {
                 new Position (1,"Dev","Lap trinh vien" ),
@@ -22,6 +24,7 @@ namespace BT_LINQ_2
                 new Position (3, "Manager", "Quan ly" ),
             };
 
+            //Khởi tạo danh sách nhân viên
             var employees = new List<Employee>
             {
                 new Employee(1, "Nguyen Van A", 25, 1, 1),
@@ -35,6 +38,8 @@ namespace BT_LINQ_2
                 new Employee(9, "Nguyen Van I", 65, 3, 1),
                 new Employee(10, "Tran Thi K", 70, 1, 2),   
             };
+
+            //Nhập thông tin từ người dùng
 
             Console.WriteLine("Nhap tu khoa tim kiem:");
             var keyword = Console.ReadLine();
@@ -51,20 +56,22 @@ namespace BT_LINQ_2
             Console.WriteLine("Nhap Phong ban:");
             var department = Console.ReadLine();
 
-            var searchResults = employees
-                .Join(positions, e => e.PositionId, p => p.Id, (e, p) => new
+            //tìm kiếm và lọc danh sách nhân viên dựa trên các yêu cầu tìm kiếm từ người dùng
+            var searchResults = employees //khởi tạo danh sách nhân viên
+                .Join(positions, e => e.PositionId, p => p.Id, (e, p) => new //kết hợp danh sách nhân viên với danh sách vị trí công việc
                 {
                     EmployeeName = e.Name,
                     Age = e.Age,
                     Position = p.Name,
                     Department = departments.Single(d => d.Id == e.DepartmentId).Name
                 })
-                .Where(e => e.EmployeeName.Contains(keyword))
-                .Where(e => e.Age >= minAge && e.Age <= maxAge)
-                .Where(e => e.Position.Contains(position))
-                .Where(e => e.Department.Contains(department))
-                .ToList();     
+                .Where(e => e.EmployeeName.Contains(keyword)) //lọc danh sách nhân viên theo từ khóa tìm kiếm
+                .Where(e => e.Age >= minAge && e.Age <= maxAge) //lọc danh sách nhân viên theo độ tuổi
+                .Where(e => e.Position.Contains(position)) //lọc danh sách nhân viên theo vị trí công việc
+                .Where(e => e.Department.Contains(department)) //lọc danh sách nhân viên theo phòng ban
+                .ToList();//chuyển danh sách nhân viên thành List
             
+            //In ra kết quả tìm kiếm    
             Console.WriteLine("Ket qua tim kiem:");
             foreach (var result in searchResults)
             {
