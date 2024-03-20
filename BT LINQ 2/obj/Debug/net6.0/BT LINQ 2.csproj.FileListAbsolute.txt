@@ -1,0 +1,14 @@
+D:\Learn C#\BT LINQ 2\BT LINQ 2\bin\Debug\net6.0\BT LINQ 2.exe
+D:\Learn C#\BT LINQ 2\BT LINQ 2\bin\Debug\net6.0\BT LINQ 2.deps.json
+D:\Learn C#\BT LINQ 2\BT LINQ 2\bin\Debug\net6.0\BT LINQ 2.runtimeconfig.json
+D:\Learn C#\BT LINQ 2\BT LINQ 2\bin\Debug\net6.0\BT LINQ 2.dll
+D:\Learn C#\BT LINQ 2\BT LINQ 2\bin\Debug\net6.0\BT LINQ 2.pdb
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\BT LINQ 2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\BT LINQ 2.AssemblyInfoInputs.cache
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\BT LINQ 2.AssemblyInfo.cs
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\BT LINQ 2.csproj.CoreCompileInputs.cache
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\BT LINQ 2.dll
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\refint\BT LINQ 2.dll
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\BT LINQ 2.pdb
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\BT LINQ 2.genruntimeconfig.cache
+D:\Learn C#\BT LINQ 2\BT LINQ 2\obj\Debug\net6.0\ref\BT LINQ 2.dll
